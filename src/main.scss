@@ -45,12 +45,7 @@ body {
       margin: 4rem;
     }
   }
-  /* button {
-  border: initial;
-  background-color: initial;
-  color: inherit;
-  font: inherit;
-  outline: none; /* Make Sure there is a visual indicator for focus state! */
+
   .buttons {
     display: flex;
     justify-content: center;
@@ -71,14 +66,14 @@ body {
       color: $btn-color;
       background-color: $btn-bg;
       cursor: pointer;
-    }
 
-    &:hover,
-    &:focus {
-      color: $btn-hover-color;
-      background-color: $btn-hover-bg;
-      border: $btn-hover-border;
-      box-shadow: $btn-hover-shadow;
+      &:hover,
+      &:focus {
+        color: $btn-hover-color;
+        background-color: $btn-hover-bg;
+        border: $btn-hover-border;
+        box-shadow: $btn-hover-shadow;
+      }
     }
   }
 

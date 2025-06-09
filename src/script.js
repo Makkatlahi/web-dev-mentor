@@ -6,13 +6,13 @@ const handleClick = (e) => {
   const clickedButtonEl = e.currentTarget;
 
   if (clickedButtonEl.classList.contains("btn-1")) {
-    url = "qr-code/index.html";
+    url = "src/qr-code/index.html";
   } else if (clickedButtonEl.classList.contains("btn-2")) {
-    url = "blog-preview-card/index.html";
+    url = "src/blog-preview-card/index.html";
   } else if (clickedButtonEl.classList.contains("btn-3")) {
-    url = "social-links-profile/index.html";
+    url = "src/social-links-profile/index.html";
   } else if (clickedButtonEl.classList.contains("btn-4")) {
-    url = "recipe-page/index.html";
+    url = "src/recipe-page/index.html";
   }
 
   if (url && frameElement) {
