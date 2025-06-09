@@ -1,10 +1,10 @@
 # WebDev Mentor
 
-A growing collection of frontend challenges built with HTML, CSS (SCSS), and JavaScript. All challenges are accessible from a single, responsive home page.
+A collection of frontend challenges built with HTML, CSS (SCSS), and JavaScript. All challenges are accessible from a single, responsive home page.
 
 ## Features
 
-- **Centralized Home Page:** Easily browse and launch all challenges from one place.
+- **Central Home Page:** Browse and launch all challenges from one place.
 - **Dynamic Loading:** Challenges open in an embedded iframe, so you never leave the home page.
 - **Responsive Design:** Works well on desktop and mobile devices.
 - **SCSS Styling:** Uses Sass for organized, maintainable styles.
@@ -14,7 +14,7 @@ A growing collection of frontend challenges built with HTML, CSS (SCSS), and Jav
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/your-username/web-dev-mentor.git
+   git clone https://github.com/Makkatlahi/web-dev-mentor.git
    cd web-dev-mentor
    ```
 
