@@ -1,54 +1,55 @@
-# WebDev Mentor Challenges
+# WebDev Mentor
 
-Welcome to **WebDev Mentor Challenges**!  
-This repository is a collection of frontend coding challenges, each organized in its own folder and accessible from a single, responsive home page.
+A growing collection of frontend challenges built with HTML, CSS (SCSS), and JavaScript. All challenges are accessible from a single, responsive home page.
 
 ## Features
 
-- **Centralized Home Page:** Easily browse and launch all challenges from `home.html`.
+- **Centralized Home Page:** Easily browse and launch all challenges from one place.
 - **Dynamic Loading:** Challenges open in an embedded iframe, so you never leave the home page.
-- **Responsive Design:** Works well on both desktop and mobile devices.
-- **Scalable:** Add new challenges as you grow your skills.
+- **Responsive Design:** Works well on desktop and mobile devices.
+- **SCSS Styling:** Uses Sass for organized, maintainable styles.
+- **Easy to Extend:** Add new challenges as your skills grow.
 
 ## Getting Started
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/Makkatlahi/web-dev-mentor_challenges.git
-   cd web-dev-mentor_challenges
+   git clone https://github.com/your-username/web-dev-mentor.git
+   cd web-dev-mentor
    ```
 
-2. **Open `home.html` in your browser.**
+2. **Open `index.html` in your browser.**
 
 3. **Click any challenge button to view the challenge in the embedded frame.**
 
 ## Project Structure
 
 ```
-web-dev-mentor_challenges/
+web-dev-mentor/
 │
-├── home.html           # Main landing page
-├── home.css            # Styles for the home page
-├── script.js           # JavaScript for dynamic challenge loading
+├── index.html           # Main landing page (home page)
+├── main.scss            # Main SCSS file for styling
+├── main.css             # Compiled CSS from SCSS
+├── script.js            # JavaScript for dynamic challenge loading
 │
-├── qr-code/            # Challenge 1 folder
+├── qr-code/             # Challenge 1 folder
 │   └── index.html
 │   └── style.css
 │   └── ...
 │
-├── blog-preview-card/  # Challenge 2 folder
+├── blog-preview-card/   # Challenge 2 folder
 │   └── index.html
 │   └── style.css
 │   └── ...
 │
-├── ...                 # More challenge folders as you add them
+├── ...                  # More challenge folders as you add them
 ```
 
 ## Adding a New Challenge
 
 1. **Create a new folder** in the project root (e.g., `my-new-challenge/`).
 2. **Add your challenge files** (`index.html`, `style.css`, etc.) to this folder.
-3. **Update `home.html`**  
+3. **Update `index.html`**  
    Add a new button inside the `.buttons` section:
    ```html
    <button class="btn btn-5" type="button">Challenge #5</button>
@@ -61,9 +62,10 @@ web-dev-mentor_challenges/
    }
    ```
 
-## Contributing
+## Development
 
-Feel free to fork this repository and submit pull requests with new challenges or improvements!
+- **SCSS:** Edit `main.scss` and compile to `main.css` using your preferred Sass compiler.
+- **Live Server:** Use the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension in VS Code for live reloading.
 
 ## License
 
