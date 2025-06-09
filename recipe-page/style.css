@@ -1,0 +1,318 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+
+  --Stone-100: hsl(30, 54%, 90%);
+  --Stone-150: hsl(30, 18%, 87%);
+  --Stone-600: hsl(30, 10%, 34%);
+  --Stone-900: hsl(24, 5%, 18%);
+
+  --Brown-800: hsl(14, 45%, 36%);
+
+  --Rose-800: hsl(332, 51%, 32%);
+  --Rose-50: hsl(330, 100%, 98%);
+
+  --young-serif: "Young Serif", sans serif;
+  --outfit: "Outfit", sans serif;
+}
+
+html {
+  font-size: 0.625rem;
+  font-family: var(--young-serif);
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+.container {
+  width: 37.5rem;
+  height: 100vh;
+
+  .container__img {
+    width: 100%;
+    height: 17rem;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+  }
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.4rem;
+  padding: 3.5rem;
+
+  .header__title {
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--Stone-900);
+  }
+  .header__description {
+    font-size: 1.56rem;
+    font-weight: 400;
+    font-family: var(--outfit);
+    color: var(--Stone-600);
+    line-height: 1.5;
+  }
+  .header__prep {
+    background-color: var(--Rose-50);
+    font-family: var(--outfit);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2.1rem;
+    height: 19.8rem;
+    width: 32rem;
+    margin-top: 0.95rem;
+
+    .header__prep-title {
+      color: var(--Rose-800);
+      font-weight: 600;
+      font-size: 2rem;
+    }
+    .header__prep-list {
+      margin-left: 2rem;
+      margin-top: 0.8rem;
+      font-size: 1.6rem;
+      color: var(--Stone-600);
+    }
+    .header__prep-item {
+      display: list-item;
+      line-height: 1.5;
+      padding-left: 2rem;
+      width: 200px;
+      margin-bottom: 10px;
+    }
+    .header__prep-item::marker {
+      color: var(--Rose-800);
+      font-size: 1.2rem;
+      font-weight: 200;
+    }
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 32rem;
+  margin-left: 3rem;
+  margin-top: -1rem;
+
+  .ingredients {
+    .ingredients__title {
+      font-size: 2.8rem;
+      color: var(--Brown-800);
+      font-weight: 400;
+    }
+    .ingredients__list {
+      line-height: 1.5;
+      border-bottom: 1px solid var(--Stone-150);
+      width: 100%;
+      padding-bottom: 2.8rem;
+
+      .ingredients__list-item {
+        display: list-item;
+        font-family: var(--outfit);
+        font-size: 1.6rem;
+        color: var(--Stone-600);
+        font-weight: 400;
+        padding-left: 2rem;
+        margin-top: 1rem;
+        margin-left: 2rem;
+      }
+      .ingredients__list-item::marker {
+        font-size: 1.2rem;
+        color: var(--Brown-800);
+      }
+    }
+  }
+  .instructions {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+
+    .instructions__title {
+      font-size: 2.8rem;
+      color: var(--Brown-800);
+      font-weight: 400;
+      margin-top: -0.5rem;
+    }
+    .instructions__list {
+      line-height: 1.5;
+      border-bottom: 1px solid var(--Stone-150);
+      width: 93%;
+      padding-bottom: 3.5rem;
+
+      .instructions__list-item {
+        display: list-item;
+        font-family: var(--outfit);
+        font-size: 1.5rem;
+        color: var(--Stone-600);
+        font-weight: 400;
+        padding-left: 1.8rem;
+        margin-top: 1.5rem;
+        margin-left: 2.5rem;
+      }
+      .instructions__list-item::marker {
+        font-size: 1.4rem;
+        color: var(--Brown-800);
+        font-weight: bold;
+      }
+    }
+  }
+  .nutrition {
+    margin-top: 3rem;
+    color: var(--Stone-600);
+    text-align: left;
+    padding-bottom: 1.5rem;
+    height: 33.5rem;
+
+    .nutrition__title {
+      font-size: 2.8rem;
+      color: var(--Brown-800);
+      font-weight: 400;
+      margin-top: -0.5rem;
+      margin-bottom: 2rem;
+    }
+    .nutrition__description {
+      font-size: 1.56rem;
+      font-weight: 400;
+      font-family: var(--outfit);
+      line-height: 1.5;
+      width: 90%;
+    }
+    .nutrition__table {
+      width: 93%;
+      height: 19.5rem;
+      border-collapse: collapse;
+      font-size: 1.6rem;
+      font-family: var(--outfit);
+      margin-top: 1rem;
+
+      .nutrition__label,
+      .nutrition__value {
+        text-align: left;
+      }
+      .nutrition__label {
+        padding-left: 3rem;
+      }
+
+      .nutrition__row:not(:last-child) td,
+      .nutrition__table .nutrition__row:not(:last-child) th {
+        border-bottom: 1px solid var(--Stone-150);
+      }
+
+      .nutrition__value {
+        padding-right: 2rem;
+        color: var(--Brown-800);
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1580px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Stone-100);
+  }
+  .container {
+    width: 73.6rem;
+    height: 171rem;
+    background-color: var(--White);
+    margin: 12.3rem 34.2rem;
+    gap: 2.4rem;
+    padding: 4rem;
+    border-radius: 2rem;
+
+    .container__img {
+      width: 65.6rem;
+      height: 30rem;
+      object-fit: cover;
+      margin-bottom: 0.1rem;
+      border-radius: 1.2rem;
+    }
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 0;
+
+    .header__title {
+      font-size: 4rem;
+    }
+    .header__prep {
+      width: 65.6rem;
+      height: 18rem;
+
+      .header__prep-list {
+        margin-left: 2rem;
+        margin-top: 0.8rem;
+        font-size: 1.6rem;
+        color: var(--Stone-600);
+      }
+      .header__prep-item {
+        display: list-item;
+        line-height: 1.5;
+        padding-left: 2rem;
+        width: 100%;
+      }
+    }
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    margin-left: 0;
+
+    .ingredients .ingredients__list {
+      line-height: 1.5;
+      border-bottom: 1px solid var(--Stone-150);
+      width: 136%;
+      padding-bottom: 3rem;
+    }
+
+    .instructions .instructions__list {
+      line-height: 1.4;
+      width: 100%;
+      padding-bottom: 3rem;
+      .instructions__list-item {
+        width: 90%;
+      }
+    }
+
+    .nutrition .nutrition__table {
+      width: 116%;
+      height: 19.5rem;
+      border-collapse: collapse;
+      font-size: 1.6rem;
+      font-family: var(--outfit);
+      margin-top: 1rem;
+
+      .nutrition__value {
+        padding-right: 3.2rem;
+      }
+    }
+
+    .nutrition .nutrition__description {
+      width: 100%;
+    }
+  }
+}

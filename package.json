@@ -1,0 +1,23 @@
+{
+  "name": "web-dev-mentor",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Makkatlahi/web-dev-mentor_challenges#readme",
+  "bugs": {
+    "url": "https://github.com/Makkatlahi/web-dev-mentor_challenges/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Makkatlahi/web-dev-mentor_challenges.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "script.js",
+  "scripts": {
+    "compile": "sass --watch --no-source-map main.scss index.css"
+  },
+  "dependencies": {
+    "sass": "^1.89.1"
+  }
+}
