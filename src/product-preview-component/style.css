@@ -5,3 +5,27 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: hsl(30, 38%, 92%);
+  width: 37.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  width: 34.3rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1rem;
+  margin: calc(268px - 240px) calc(359px - 343px);
+}
+
+.mobile-img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+  object-fit: contain;
+}
