@@ -13,6 +13,8 @@ const handleClick = (e) => {
     url = "src/social-links-profile/index.html";
   } else if (clickedButtonEl.classList.contains("btn-4")) {
     url = "src/recipe-page/index.html";
+  } else if (clickedButtonEl.classList.contains("btn-5")) {
+    url = "src/product-preview-component/index.html";
   }
 
   if (url && frameElement) {
