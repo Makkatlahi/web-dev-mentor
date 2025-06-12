@@ -11,21 +11,130 @@ html {
 }
 body {
   background-color: hsl(30, 38%, 92%);
-  width: 37.5rem;
+  font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  max-width: 37.5rem;
+  margin: 0 auto;
 }
 
 .card {
   width: 34.3rem;
   background-color: hsl(0, 0%, 100%);
   border-radius: 1rem;
-  margin: calc(268px - 240px) calc(359px - 343px);
+  overflow: hidden;
+  margin: calc(26.8rem - 24rem) calc(35.9rem - 34.3rem);
 }
 
-.mobile-img {
+@media (min-width: 600px) {
+  .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60rem;
+    max-width: 60rem;
+  }
+
+  .card__content {
+    display: grid;
+    padding: 3rem;
+    gap: 1.4rem;
+    margin-left: 1rem;
+  }
+
+  .card__button {
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    padding: 1.2rem;
+    border-radius: 1rem;
+    border: 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.1rem;
+    margin-top: -0.4rem;
+  }
+}
+
+.card__image--mobile {
   width: 100%;
-  border-radius: 1rem 1rem 0 0;
+  /* border-radius: 1rem 1rem 0 0; */
   object-fit: contain;
+}
+
+.card__content {
+  display: grid;
+  padding: 2.3rem;
+  gap: 1.4rem;
+}
+.card__type {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: hsl(228, 12%, 48%);
+  text-transform: uppercase;
+  letter-spacing: 0.6rem;
+}
+.card__title {
+  font-size: 3.1rem;
+  line-height: 1;
+  font-weight: 700;
+  font-family: "Fraunces", sans-serif;
+  color: hsl(212, 21%, 14%);
+  /* margin-top: 1rem; */
+}
+.card__description {
+  font-size: 1.4rem;
+  color: hsl(228, 12%, 48%);
+  font-weight: 500;
+  line-height: 1.65;
+}
+.card__prices {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+  margin: 0.7rem 0;
+}
+.card__price--current {
+  font-size: 3rem;
+  font-family: "Fraunces", sans-serif;
+  color: hsl(158, 36%, 37%);
+  font-weight: bold;
+}
+.card__price--original {
+  font-size: 1.2rem;
+  text-decoration: line-through;
+}
+
+.card__button {
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  padding: 1.6rem;
+  border-radius: 1rem;
+  border: 0;
+  font-size: 1.4rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.1rem;
+  margin-top: -0.4rem;
+}
+
+.card__button[data-icon="shopping-cart"]::before {
+  content: "";
+  background-image: url("./icon-cart.svg");
+  width: 15px;
+  height: 16px;
+}
+
+.card__button:is(:hover, :focus) {
+  background-color: hsl(158, 42%, 18%);
 }
