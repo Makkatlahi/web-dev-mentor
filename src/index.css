@@ -59,7 +59,8 @@ body .buttons .btn:hover, body .buttons .btn:focus {
 }
 body #challenge-frame {
   width: 100vw;
-  height: 600px;
   display: none;
   margin-top: 2rem;
+  resize: both;
+  background-color: white;
 }
